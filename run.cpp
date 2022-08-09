@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        std::cerr << "\n\n*** \033[1;31mPlease enter a random integer number\033[0m ***\n\n" << std::endl;
+        std::cerr << "\n*** \033[1;31mPlease enter a random integer number\033[0m ***\n" << std::endl;
         return -1;
     }
     else {
@@ -21,13 +21,13 @@ int main(int argc, char *argv[]) {
             int y = std::rand() % N + 15;
             vecY.push_back(y);
         }
-        std::ofstream data("./data/points.txt");
+        std::ofstream data("./points.txt");
         for (int i = 0; i < vecX.size(); i++) {
             data << vecX[i] << " " << vecY[i] << std::endl; 
         }
         data.close();
-        system("./DelaunayTree.x < ./data/points.txt > ./data/results.txt");
-        system("./TriangulationOutline.x < ./data/results.txt");
+        system("./DelaunayTree.x < points.txt > results.txt");
+        system("./TriangulationOutline.x < results.txt");
     }
     return 0;
 }

@@ -228,25 +228,6 @@ void Node::output() {
         else if ((flag.is_infinite() == 1) && (!flag.is_last_finite()))
             vertices[0]->lineSegment(vertices[1]);
     }
-    // double s1 = (vertices[0]->getX()) * (vertices[0]->getX()) + (vertices[0]->getY()) * (vertices[0]->getY());
-    // double s2 = (vertices[1]->getX()) * (vertices[1]->getX()) + (vertices[1]->getY()) * (vertices[1]->getY());
-    // double s3 = (vertices[2]->getX()) * (vertices[2]->getX()) + (vertices[2]->getY()) * (vertices[2]->getY());
-    
-    // double dX13 = vertices[0]->getX() - vertices[2]->getX();
-    // double dX32 = vertices[2]->getX() - vertices[1]->getX();
-    // double dX21 = vertices[1]->getX() - vertices[0]->getX();
-
-    // double dY12 = vertices[0]->getY() - vertices[1]->getY();
-    // double dY23 = vertices[1]->getY() - vertices[2]->getY();
-    // double dY31 = vertices[2]->getY() - vertices[0]->getY();
-
-    // double factor = 2*((vertices[0]->getX()) * dY23 + (vertices[1]->getX()) * dY31 + (vertices[2]->getX()) * dY23);
-    // double x0 = (s1 * dY23 + s2 * dY31 + s3 * dY12) / factor;
-    // double y0 = (s1 * dX32 + s2 * dX13 + s3 * dX21) / factor; 
-
-    // double R = sqrt((dX21*dX21* + dY12*dY12) * (dX13*dX13* + dY31*dY31) * (dX32*dX32* + dY23*dY23)) / abs(factor);
-    // Point *center = new Point(x0, y0);
-    // center->circle(R);
 }
 
 #endif

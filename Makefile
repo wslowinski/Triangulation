@@ -6,7 +6,7 @@ GENERATOR = Generator
 RUN = run
 TREE = DelaunayTree
 
-EXEC_RUN = $(RUN).x
+EXEC_RUN = $(RUN)
 OBJS_RUN = $(RUN).o
 LIBS_RUN = 
 
@@ -44,7 +44,7 @@ $(EXEC_DT): $(OBJS_DT)
 
 .PHONY: clean zip
 clean:
-	rm -f *.o *.x DelaunayTriangulation.pdf
+	rm -f *.o *.x run points.txt results.txt
 
 zip: clean
 	(cd ../; zip -r Vladyslav_Slovinskyi_$(DIR).zip  $(DIR) )

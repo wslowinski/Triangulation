@@ -54,8 +54,4 @@ void Point::lineSegment(Point *p) {
     std::cout << this->x << " " << this->y << " " << p->x << " " << p->y << std::endl;
 }
 
-void Point::circle(double r) {
-    std::cerr << this->x << " " << this->y << " " << r << std::endl;
-}
-
 #endif
