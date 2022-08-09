@@ -14,10 +14,10 @@ Project is created with:
 1. To run this project, install it locally;
 2. The following make command will help you in compiling the Makefile into an executable program:
 
-```$ make```
+   ```$ make```
 
 3. Finally, we are ready to run the executable file we created in the last step through the Terminal. Run the following command to do so:
 
-```$ ./run N ```
+   ```$ ./run <N>```
 
-where ```N ``` -- number of points;
+   where ```<N>``` -- number of points;
