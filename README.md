@@ -7,7 +7,7 @@ A Delaunay triangulation of a random set of 120 points in a plane.
 
 ## Technologies
 Project is created with:
-* C++14
+* C++17
 * cairo graphics library
 	
 ## Setup
