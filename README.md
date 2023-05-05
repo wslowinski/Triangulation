@@ -20,4 +20,4 @@ Project is created with:
 
    ```$ ./run <N>```
 
-   where ```<N>``` -- number of points;
+   where ```<N>``` -- number of points.
